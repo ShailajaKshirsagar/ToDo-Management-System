@@ -17,7 +17,7 @@ public class TodoController {
     @Autowired
     TodoService todoService;
 
-    // Create Task
+    // Create Task api added
     @PostMapping("/createTodo")
     public ResponseEntity<String> createTodo(@RequestBody Todo todo) {
         String msg = todoService.createTodo(todo);
