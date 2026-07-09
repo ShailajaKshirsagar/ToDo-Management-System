@@ -24,7 +24,7 @@ public class TodoController {
         return new ResponseEntity<>(msg, HttpStatus.CREATED);
     }
 
-    //get all tasks
+    //get all tasks added
     @GetMapping("/getAllList")
     public  ResponseEntity<List<Todo>> getAllTodoList(){
         List<Todo> todolist = todoService.getAllList();
